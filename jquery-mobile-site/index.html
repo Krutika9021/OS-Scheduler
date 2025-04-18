@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Mobile Styled Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fc;
+    }
+
+    h1, h2, h3, p, label {
+      color: #333;
+    }
+
+    .ui-page {
+      background: #ffffff;
+    }
+
+    .ui-header, .ui-footer {
+      background: #4a90e2 !important;
+      color: white !important;
+      border: none;
+    }
+
+    .ui-header h1, .ui-footer p {
+      color: white !important;
+    }
+
+    .ui-btn {
+      background: #e24aad !important;
+      border: none;
+      color: white !important;
+      font-weight: 500;
+    }
+
+    .ui-btn:hover {
+      background: #bd3574 !important;
+    }
+
+    .custom-footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .ui-content {
+      padding: 20px;
+    }
+
+    input, textarea {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    ul.ui-listview li a {
+      font-weight: 500;
+      color: #121212 !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>Home</h1>
+  </div>
+
+  <div data-role="content">
+    <p>Welcome to our <strong>modern mobile site</strong> powered by jQuery Mobile!</p>
+    <a href="#about" class="ui-btn">About Us</a>
+    <a href="#services" class="ui-btn">Our Services</a>
+    <a href="#contact" class="ui-btn">Contact</a>
+    <a href="#formpage" class="ui-btn">Feedback Form</a>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>© 2025 Mobile Web</p>
+  </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+  <div data-role="header">
+    <h1>About</h1>
+  </div>
+
+  <div data-role="content">
+    <p>We specialize in building modern mobile-first websites using jQuery Mobile and custom styling.</p>
+    <a href="#home" class="ui-btn">Back to Home</a>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>© 2025 Mobile Web</p>
+  </div>
+</div>
+
+<!-- Services Page -->
+<div data-role="page" id="services">
+  <div data-role="header">
+    <h1>Our Services</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#">🌐 Web Development</a></li>
+      <li><a href="#">📱 Mobile App Design</a></li>
+      <li><a href="#">🎨 UI/UX Prototyping</a></li>
+      <li><a href="#">📈 SEO & Marketing</a></li>
+    </ul>
+    <a href="#home" class="ui-btn">Back to Home</a>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>© 2025 Mobile Web</p>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact Us</h1>
+  </div>
+
+  <div data-role="content">
+    <p><strong>Email:</strong> pranjalalhat@example.com</p>
+    <p><strong>Phone:</strong> +9123 4560 7890</p>
+    <a href="#home" class="ui-btn">Back to Home</a>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>© 2025 Mobile Web</p>
+  </div>
+</div>
+
+<!-- Feedback Form Page -->
+<div data-role="page" id="formpage">
+  <div data-role="header">
+    <h1>Feedback</h1>
+  </div>
+
+  <div data-role="content">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message"></textarea>
+
+      <input type="submit" value="Submit" class="ui-btn ui-btn-b">
+    </form>
+    <a href="#home" class="ui-btn">Back to Home</a>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>© 2025 Mobile Web</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Scheduling Algorithm Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OS Scheduling Algorithm Calculator</h1>
+        
+        <label for="algorithm">Choose Algorithm:</label>
+        <select id="algorithm">
+            <option value="FCFS">FCFS</option>
+            <option value="SJF">SJF</option>
+            <option value="RR">Round Robin</option>
+            <option value="Priority">Priority Scheduling</option>
+        </select>
+
+        <label id="quantumLabel" style="display: none;">Time Quantum:</label>
+        <input type="number" id="timeQuantum" min="1" style="display: none;">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="processBody"></tbody>
+        </table>
+
+        <button onclick="addProcess()">➕ Add Process</button>
+        <button id="calculate">Calculate</button>
+
+        <h2>Results</h2>
+        <p id="result"></p>
+        
+        <h2>Gantt Chart</h2>
+        <div id="ganttChart"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
